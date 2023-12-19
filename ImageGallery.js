@@ -16,7 +16,7 @@ container.addEventListener('click', function(e){
             // if(thumb.classList.contains('active')){
             //     thumb.classList.remove('active')
             // }
-            thumb.className = 'thumb'
+            thumb.className = (thumb)
         })
 
         e.target.classList.add('active')

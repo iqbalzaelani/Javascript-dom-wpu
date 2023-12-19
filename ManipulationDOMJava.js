@@ -121,7 +121,7 @@ liBaru.style.color = 'white'
 liBaru.style.fontFamily = 'times'
 liBaru.style.fontSize = '30px'
 
-h2Baru.style.backgroundColor = 'lightred'
+h2Baru.style.backgroundColor = 'red'
 h2Baru.style.color = 'white'
 h2Baru.style.fontFamily = 'times'
 h2Baru.style.fontSize = '30px'
