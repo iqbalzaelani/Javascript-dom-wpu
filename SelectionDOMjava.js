@@ -14,16 +14,22 @@ judul.style.fontFamily = 'times'
 //document.getElementByTagName()
 // -> HTMLCollections jadi meskipun elemen p ada satu tetap harus menggunakan index[] karena merupakan html collections
 const p = document.getElementsByTagName('p')
+//paragraf 1
 p[0].style.backgroundColor = 'black'
 p[0].style.color = 'white'
-p[0].style.fontSize = '20px'
+p[0].style.fontSize = '20px'   
+p[0].style.fontFamily = 'arial'
+//paragraf 2
 p[1].style.backgroundColor = 'red'
 p[1].style.color = 'white'
 p[1].innerHTML = 'Di ubah melalui javascript cara kedua'
-p[1].style.fontSize = '20px'
+p[1].style.fontSize = '15px'
+p[1].style.fontFamily = 'times'
+//paragraf 3
 p[2].style.backgroundColor = 'black'
 p[2].style.color = 'white'
-p[2].style.fontSize = '20px'
+p[2].style.fontSize = '10px'
+p[2].style.fontFamily = 'arial'
 
 const h1 = document.getElementsByTagName('h1')[0]
 h1.style.fontSize = '50px'
@@ -40,6 +46,7 @@ p4.style.fontSize = '20px'
 
 const li2 = document.querySelector('section#b ul li:nth-child(2)')
 li2.style.backgroundColor = 'red'
+li2.style.color = 'white'
 
 const li3 = document.querySelector('section#b ul li:nth-child(3)')
 li3.style.backgroundColor = 'black'

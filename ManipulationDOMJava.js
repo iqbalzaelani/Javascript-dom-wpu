@@ -114,14 +114,14 @@ sectionB.replaceChild(h2Baru, p4) //aturan mainnya panggil dulu parent yaitu sec
 pBaru.style.backgroundColor = 'lightgreen'
 pBaru.style.color = 'white'
 pBaru.style.fontFamily = 'arial'
-pBaru.style.fontSize = '30px'
+pBaru.style.fontSize = '20px'
 
 liBaru.style.backgroundColor = 'lightblue'
 liBaru.style.color = 'white'
 liBaru.style.fontFamily = 'times'
-liBaru.style.fontSize = '30px'
+liBaru.style.fontSize = '15px'
 
 h2Baru.style.backgroundColor = 'red'
 h2Baru.style.color = 'white'
 h2Baru.style.fontFamily = 'times'
-h2Baru.style.fontSize = '30px'
+h2Baru.style.fontSize = '10px'
