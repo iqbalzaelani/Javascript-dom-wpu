@@ -22,12 +22,41 @@ const close = document.querySelectorAll('.close')
 //     })
 // }
 
+
 //cara kedua
 close.forEach(function(el){
     el.addEventListener('click', function(e){
         e.target.parentElement.style.display = 'none'
+        e.preventDefault() //untuk mencegah aksi default (penggunaan preventDefault)
+        e.stopPropagation() //untuk mencegah event bubbling(event card) ke close
     })
 })
+
+const cards = document.querySelectorAll('.card')
+cards.forEach(function(card){
+    card.addEventListener('click', function(e){
+        alert('ok')
+    })
+})
+
+//disini saya menerapkan event bubbling yang dimana pada saat saya klik pada klik event card yang terlebih dahulu di panggil
+//maksudnya event bubbling ketika kita punya sebuah event disini (kalo saya di tombol close) dan saya juga punya event di card
+//maka ketika saya menjalankan event di (close) si card akan ikut terjalankan dia akan cek ke atas terus menerus seperti gelembung
+//sampai gelembung nya pecah karena tidak ada pembungkus lagi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //disini kita akan mengathui ada method apa aja untuk menelusuri ini
 //DOM Traversal Method nya ada banyak dan ada 2 type
@@ -41,9 +70,11 @@ close.forEach(function(el){
 
 
 
-const nama = document.querySelector('.nama')
-console.log(nama) //dia akan menampilkan nama
-console.log(nama.parentElement) // dia akan menampilkan parent nama
+// const nama = document.querySelector('.nama')
+// console.log(nama) //dia akan menampilkan nama
+// console.log(nama.parentElement) // dia akan menampilkan parent nama
+// console.log(nama.parentNode) // menampilkan parent nama
+// console.log(nama.parentElement.parentElement) //menampilkan parent kedua di atas elemen nama
 
 
 

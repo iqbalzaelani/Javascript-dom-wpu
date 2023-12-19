@@ -37,7 +37,7 @@ sBiru.addEventListener('input', function(){
     const r = sMerah.value
     const g = sHijau.value
     const b = sBiru.value
-    document.body.style.backgroundColor = 'rgb('+r+','+g+','+b+')'
+    document.body.style.backgroundColor = 'rgb('+r+', '+g+','+b+')'
 })
 
 document.body.addEventListener('mousedown', function(event){
