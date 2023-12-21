@@ -5,6 +5,7 @@
 //Cara untuk membuat Object pada Javascript
 
 // 1.Object Literal
+//TIDAK EFEKTIF UNTUK OBJECT YANG BANYAK
 // disini saya membuat object mahasiswa pake literal
 let mahasiswa1 = {
     nama: 'Mohamad Iqbal Zaelani',
@@ -31,6 +32,7 @@ let mahasiswa2 = {
 
 
 // 2.Function Declaration
+//Lebih efektif cuman terkedala jika membuat method baru karena harus mengelola 2 object
 //nah keuntungannya gaperlu buat object duplikat
 function Mahasiswa(nama, energy){
     let mahasiswa = {}
@@ -49,6 +51,10 @@ function Mahasiswa(nama, energy){
     mahasiswa.olahraga = function(set){
         this.energy -= set
         console.log(`Selamat berolahraga ${this.nama}, selamat berolahraga`)
+    }
+    mahasiswa.bergadang = function(jam){
+        this.energy -= jam * 2
+        console.log(`Kebodohan ${this.nama}, Jangan di ulang`)
     }
 
     return mahasiswa
@@ -83,6 +89,10 @@ function Siswa(nama, energy){
         this.energy -= jam
         console.log(`Selamat Berolahraga ${this.nama}, selamat berolahraga`)
     }
+    this.bergadang = function(jam){
+        this.energy -= jam *2
+        console.log(`Kebodohan ${this.nama}, Jangan di ulang`)
+    }
 }
 
 let Zaelani = new Siswa('Mohamad Iqbal Zaelani', 20)
@@ -90,4 +100,78 @@ let Sumbul = new Siswa('Mohamad Sumbul', 10)
 //kenapa harus pakai new kalo tidak dia akan return sama deklarasi variable
 
 
-// 4.Object.create
+// 4.Object.create  
+//Object create berfungsi untuk menghubungkan object object
+//PALING EFEKTIF
+//disini saya membuat object terpisah
+//penggunaan object create otomatis daftar ketika ada method baru
+//penggunaan nya let buruh = Object.create(methodBuruh)
+const methodBuruh = {
+    makan: function(porsi){
+        this.energy += porsi
+        console.log(`Halo ${this.nama}, sok makan`)
+    },
+    main: function(jam){
+        this.energy -= jam
+        console.log(`Halo ${this.nama}, sok main`)
+    },
+    tidur: function(jam){
+        this.energy += jam * 2
+        console.log(`Halo ${this.nama}, sok tidur`)
+    },
+    bergadang: function(jam){
+        this.energy -= jam * 2
+        console.log(`Kebodohan ${this.nama},Jangan diulang`)
+    }
+}
+
+
+function Buruh(nama, energy){
+    let buruh = Object.create(methodBuruh)
+    buruh.nama = nama
+    buruh.energy = energy
+
+    return buruh
+}
+
+let buruh1 = Buruh('Mohamad', 10)
+let buruh2 = Buruh('Iqbal', 10)
+let buruh3 = Buruh('Zaelani', 10)
+
+
+
+//Penggunaan Prototype agar lebih simple
+//disini saya membuat Constructor function
+//nah Constructor function ini sebenarnya mempunyai parent yaitu prototype
+//dengan menggunakan prototype kita tidak perlu membuat object baru
+
+function Human(nama, energy) {
+    this.nama = nama
+    this.energy = energy
+
+}
+Human.prototype.makan = function(porsi){
+    this.energy += porsi
+    return `Halo ${this.nama}, selamat makan`
+}
+Human.prototype.istirahat = function(menit){
+    this.energy += menit
+    return `Halo $(this.nama), selamat beristirahat`
+}
+Human.prototype.main = function(jam){
+    this.energy -= porsi
+    return `Halo ${this.nama}, selamat bermain`
+}
+Human.prototype.tidur = function(jam){
+    this.energy += jam *2
+    return `Halo ${this.nama}, selamat tidur`
+}
+Human.prototype.olahraga = function(jam){
+    this.energy += jam *2
+    return `Halo ${this.nama}, selamat berolahraga`
+}
+Human.prototype.bergadang = function(jam){
+    this.energy -= jam *3
+    return `Tolol ${this.nama}, anda mengurangi energi tubuh anda`
+}
+let bal = new Human('Mohamad Iqbal Zaelani', 10)
