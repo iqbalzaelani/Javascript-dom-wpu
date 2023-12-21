@@ -11,7 +11,7 @@ let mahasiswa1 = {
     energy: 10,
     makan: function(porsi){
         this.energy = this.energy + porsi
-        console.log('Selamat makan $(this.nama), selamat makan')
+        console.log(`Selamat makan ${this.nama}, selamat makan`)
     }
 }
 let mahasiswa2 = {
@@ -19,7 +19,7 @@ let mahasiswa2 = {
     energy: 10,
     makan: function(porsi){
         this.energy = this.energy + porsi
-        console.log('Selamat makan $(this.nama), selamat makan')
+        console.log(`Selamat makan ${this.nama}, selamat makan`)
     }
 }
 //Object Literal pakai {} yang isinya properti
@@ -38,13 +38,25 @@ function Mahasiswa(nama, energy){
     mahasiswa.energy = energy
 
     mahasiswa.makan = function(porsi){
-        this.energy += energy
-        console.log('Selamat makan $(this.nama), selamat makan')
+        this.energy += porsi
+        console.log(`Selamat makan ${this.nama}, selamat makan`)
     }
-    return Mahasiswa
+    //tambah method
+    mahasiswa.main = function(jam){
+        this.energy -= jam
+        console.log(`Selamat bermain ${this.nama}, selamat bermain`)
+    }
+    mahasiswa.olahraga = function(set){
+        this.energy -= set
+        console.log(`Selamat berolahraga ${this.nama}, selamat berolahraga`)
+    }
+
+    return mahasiswa
 }
 
 let iqbal = Mahasiswa('Mohamad', 10)
+let iqbal2 = Mahasiswa('Iqbal', 10)
+let iqbal3 = Mahasiswa('Zaelani', 10)
 //penggunaan declaration itu object nya kosong tidak langsung di isi
 //perbedaanya juga yang tampil fuction bukan object
 
@@ -53,4 +65,29 @@ let iqbal = Mahasiswa('Mohamad', 10)
 
 
 // 3.Constructor function
+// keyword new 
+// mirip fuction declaration bedanya tidak perlu menuliskan deklarasi variabel dan return  
+function Siswa(nama, energy){
+    this.nama = nama
+    this.energy = energy
+
+    this.makan = function(porsi){
+        this.energy += porsi
+        console.log(`Selamat makan ${this.nama}, selamat makan`)
+    }
+    this.main = function(jam){
+        this.energy -= jam
+        console.log(`Selamat bermain ${this.nama}, selamat bermain`)
+    }
+    this.olahraga = function(set){
+        this.energy -= jam
+        console.log(`Selamat Berolahraga ${this.nama}, selamat berolahraga`)
+    }
+}
+
+let Zaelani = new Siswa('Mohamad Iqbal Zaelani', 20)
+let Sumbul = new Siswa('Mohamad Sumbul', 10)
+//kenapa harus pakai new kalo tidak dia akan return sama deklarasi variable
+
+
 // 4.Object.create
