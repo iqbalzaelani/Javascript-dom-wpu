@@ -74,13 +74,61 @@ init()
 //jadi disini tampil nama akan mencari nama dia akan ke atas apakah ada nama di tampil ada
 //kalo engga ada dia akan cari sampe ke global windows ini yang di sebut lexical scope
 
-//ini contoh penggunaan closures dan tidak closures
+//Salah satu kegunaan closures 
+//kasus disini saya akan mengubah atau isi nama
 function init(){
-    let nama = 'iqbal'
-    function tampilNama(){
-        let nama = 'Clsures non closures'
+    //let nama = 'iqbal'
+    function tampilNama(nama){
         console.log(nama)
     }
-    tampilNama()
+    return tampilNama
 }
-init()
+let panggilNama = init()
+panggilNama('Iqbal Zaelani')
+//bisa juga begini
+function init(){
+    return function(nama){
+        console.log(nama)
+    }
+}
+let panggilNama2 = init()
+panggilNama2('iqbal')
+panggilNama2('zaelani')
+
+//Kenapa harus menggunakan closures
+// 1. Untuk Membuat function factoties
+// contoh function factoties
+function ucapkanSalam(waktu){
+    return function(nama){
+        console.log(`Halo ${nama}, Selamat ${waktu}, semoga harimu menyenangkan`)
+    }
+}
+let selamatPagi = ucapkanSalam('Pagi')
+let selamatSiang = ucapkanSalam('Siang')
+let selamatMalam = ucapkanSalam('Malam')
+//nah ketiga variable ini factory function karena membuat function sesuai dengan function lainnya
+//jadi disini membuat function hasil dari fuction lain
+
+console.dir(selamatPagi) //di dalem scope ini udah ada closures
+console.dir(selamatMalam('iqbal')) //di kedua ini saya menambahkan nama 
+
+
+
+
+
+// 2. Untuk membuat se olah olah kita mempunyai privat method dan closure
+let add = (function(){
+    let counter = 0     //disini saya membuat se olah olah counter ini privat tidak dapat di akses diluar 
+                        //tapi nilainya tetep di pertahankan karena dia menjadi closure
+    return function(){  //disini saya pake clousure jadi pada saat return yang di return itu fuction
+        return ++ counter
+    }
+})()
+//disini saya membungkus function nya agar tidak perlu membuat lagi variable untuk add
+//setelah di bungkus kasih () untuk menjalankannya jadi pada saat di add dia langsung menjalankan inner fuction nya (yang return fuction itu)
+
+counter = 100 //jika saya membuat ini juga tidak akan mempengaruhi function nya
+
+console.log(add())
+console.log(add())
+console.log(add())
