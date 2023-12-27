@@ -13,10 +13,6 @@ let mahasiswa1 = {
     makan: function(porsi){
         this.energy = this.energy + porsi
         console.log(`Selamat makan ${this.nama}, selamat makan`)
-    },
-    enggamakan: function(porsi){
-        this.energy = this.energy - porsi
-        console.log(`Tidak Makan membuat sakit ${this.nama}, segera makan`)
     }
 }
 let mahasiswa2 = {
@@ -25,10 +21,6 @@ let mahasiswa2 = {
     olahraga: function(set){
         this.energy = this.energy + set
         console.log(`Selamat olahraga ${this.nama}, selamat berolahraga`)
-    },
-    malesOlahraga: function(set){
-        this.energy = this.energy - set
-        console.log(`Malas membuat otot lembek ${this.nama}, semanagat`)
     }
 }
 let mahasiswa3 = {
@@ -37,10 +29,6 @@ let mahasiswa3 = {
     tidur: function(jam){
         this.energy = this.energy + jam *3
         console.log(`tidur bagus untuk pertumbuhan ${this.nama}, selamat tidur`)
-    },
-    bergadang: function(jam){
-        this.energy = this.energy - jam *3
-        console.log(`Bergadang membuat tubuh buruk ${this.nama}, perbaiki`)
     }
 }
 //Object Literal pakai {} yang isinya properti
