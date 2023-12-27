@@ -132,3 +132,5 @@ counter = 100 //jika saya membuat ini juga tidak akan mempengaruhi function nya
 console.log(add())
 console.log(add())
 console.log(add())
+console.log(add())
+console.log(add())
