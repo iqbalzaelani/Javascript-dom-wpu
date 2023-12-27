@@ -18,9 +18,17 @@ let mahasiswa1 = {
 let mahasiswa2 = {
     nama: ' Zaelani Iqbal Mohamad',
     energy: 10,
-    makan: function(porsi){
-        this.energy = this.energy + porsi
-        console.log(`Selamat makan ${this.nama}, selamat makan`)
+    olahraga: function(set){
+        this.energy = this.energy + set
+        console.log(`Selamat olahraga ${this.nama}, selamat berolahraga`)
+    }
+}
+let mahasiswa3 = {
+    nama: 'Iqbal Mohamad Zaelani',
+    energy: 10,
+    tidur: function(jam){
+        this.energy = this.energy + jam *3
+        console.log(`tidur bagus untuk pertumbuhan ${this.nama}, selamat tidur`)
     }
 }
 //Object Literal pakai {} yang isinya properti
@@ -184,3 +192,4 @@ Human.prototype.enggamakan = function(porsi){
 }
 let bal = new Human('Mohamad Iqbal Zaelani', 10)
 let bal2 = new Human('Mohamad Iqbal Zaleani', 10)
+let bal3 = new Human('Mobamad Iqbal Zaelani', 10)
