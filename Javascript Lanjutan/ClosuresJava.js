@@ -53,3 +53,10 @@ var nama = 'Mohamad'
 satu();
 dua('iqbal')
 console.log(nama)
+
+
+
+
+//2.2 CLOSURES
+//closure merupakan kombinasi antara function dan lingkungan leksikal (lexical scope) di dalam function tersebut
+//closure adalah sebuah function ketika memiliki akses ke parent scope-nya, meskipun parent scope-nya sudah selesai di eksekusi
