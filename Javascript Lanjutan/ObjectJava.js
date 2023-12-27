@@ -121,7 +121,7 @@ const methodBuruh = {
     },
     bergadang: function(jam){
         this.energy -= jam * 2
-        console.log(`Kebodohan ${this.nama},Jangan diulang`)
+        console.log(`Haduh ${this.nama}, bergadang hanya akan mengurangi kesehatan anda`)
     }
 }
 
@@ -172,6 +172,7 @@ Human.prototype.olahraga = function(jam){
 }
 Human.prototype.bergadang = function(jam){
     this.energy -= jam *3
-    return `Tolol ${this.nama}, anda mengurangi energi tubuh anda`
+    return `Hadeh ${this.nama}, bergadang hanya mengurangi kesehatan anda`
 }
 let bal = new Human('Mohamad Iqbal Zaelani', 10)
+let bal2 = new Human('Mohamad Iqbal Zaleani', 10)

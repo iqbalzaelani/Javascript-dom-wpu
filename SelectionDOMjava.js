@@ -6,7 +6,7 @@
 //Selection DOM Javascript
 //document.getElementById() -> element
 const judul = document.getElementById('judul')
-judul.innerHTML = "Zaelani Iqbal Mohamad"
+judul.innerHTML = "Alvin"
 judul.style.backgroundColor = 'red'
 judul.style.color = 'white'
 judul.style.fontFamily = 'times'
