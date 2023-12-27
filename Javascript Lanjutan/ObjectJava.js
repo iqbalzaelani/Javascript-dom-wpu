@@ -122,6 +122,10 @@ const methodBuruh = {
     bergadang: function(jam){
         this.energy -= jam * 2
         console.log(`Haduh ${this.nama}, bergadang hanya akan mengurangi kesehatan anda`)
+    },
+    tidakmakan: function(porsi){
+        this.energy -= porsi
+        console.log(`Tidak makan membuat sakit ${this.nama}, makanlah`)
     }
 }
 
@@ -173,6 +177,10 @@ Human.prototype.olahraga = function(jam){
 Human.prototype.bergadang = function(jam){
     this.energy -= jam *3
     return `Hadeh ${this.nama}, bergadang hanya mengurangi kesehatan anda`
+}
+Human.prototype.enggamakan = function(porsi){
+    this.energy -= porsi 
+    return `Tidak makan membuat sakit ${this.nama}, makanlah`
 }
 let bal = new Human('Mohamad Iqbal Zaelani', 10)
 let bal2 = new Human('Mohamad Iqbal Zaleani', 10)
