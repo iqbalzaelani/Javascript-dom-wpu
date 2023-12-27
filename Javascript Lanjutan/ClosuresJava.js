@@ -78,7 +78,7 @@ init()
 function init(){
     let nama = 'iqbal'
     function tampilNama(){
-        let nama = 'zaelani'
+        let nama = 'Clsures non closures'
         console.log(nama)
     }
     tampilNama()

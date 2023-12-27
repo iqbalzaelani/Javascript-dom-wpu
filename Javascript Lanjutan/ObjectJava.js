@@ -128,7 +128,7 @@ const methodBuruh = {
         console.log(`Halo ${this.nama}, sok main`)
     },
     tidur: function(jam){
-        this.energy += jam * 2
+        this.energy += jam * 3
         console.log(`Halo ${this.nama}, sok tidur`)
     },
     bergadang: function(jam){
@@ -138,6 +138,10 @@ const methodBuruh = {
     tidakmakan: function(porsi){
         this.energy -= porsi
         console.log(`Tidak makan membuat sakit ${this.nama}, makanlah`)
+    },
+    olahraga: function(set){
+        this.energy += set * 2
+        console.log(`Jangan lupa air putih ${this.nama}, hebat`)
     }
 }
 
