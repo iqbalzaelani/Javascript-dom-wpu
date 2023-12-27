@@ -60,3 +60,27 @@ console.log(nama)
 //2.2 CLOSURES
 //closure merupakan kombinasi antara function dan lingkungan leksikal (lexical scope) di dalam function tersebut
 //closure adalah sebuah function ketika memiliki akses ke parent scope-nya, meskipun parent scope-nya sudah selesai di eksekusi
+//closure adalah sebuah function yang sebelumnya sudah memiliki data, hasil dari function yang lain
+
+//lexical scope
+function init(){
+    let nama = 'Mohamad Iqbal Zaelani' //ini local variable
+    function tampilNama(){            //inner function (closure*)
+        console.log(nama)            //akses ke parent variable
+    }
+    tampilNama()
+}
+init()
+//jadi disini tampil nama akan mencari nama dia akan ke atas apakah ada nama di tampil ada
+//kalo engga ada dia akan cari sampe ke global windows ini yang di sebut lexical scope
+
+//ini contoh penggunaan closures dan tidak closures
+function init(){
+    let nama = 'iqbal'
+    function tampilNama(){
+        let nama = 'zaelani'
+        console.log(nama)
+    }
+    tampilNama()
+}
+init()
