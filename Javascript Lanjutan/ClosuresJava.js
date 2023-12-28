@@ -109,7 +109,7 @@ let selamatMalam = ucapkanSalam('Malam')
 //nah ketiga variable ini factory function karena membuat function sesuai dengan function lainnya
 //jadi disini membuat function hasil dari fuction lain
 
-console.dir(selamatPagi) //di dalem scope ini udah ada closures
+console.dir(selamatPagi('ibaly')) //di dalem scope ini udah ada closures
 console.dir(selamatMalam('iqbal')) //di kedua ini saya menambahkan nama 
 
 
@@ -117,20 +117,16 @@ console.dir(selamatMalam('iqbal')) //di kedua ini saya menambahkan nama
 
 
 // 2. Untuk membuat se olah olah kita mempunyai privat method dan closure
-let add = (function(){
+let add = function(){
     let counter = 0     //disini saya membuat se olah olah counter ini privat tidak dapat di akses diluar 
                         //tapi nilainya tetep di pertahankan karena dia menjadi closure
     return function(){  //disini saya pake clousure jadi pada saat return yang di return itu fuction
         return ++ counter
     }
-})()
+}()
 //disini saya membungkus function nya agar tidak perlu membuat lagi variable untuk add
 //setelah di bungkus kasih () untuk menjalankannya jadi pada saat di add dia langsung menjalankan inner fuction nya (yang return fuction itu)
 
 counter = 100 //jika saya membuat ini juga tidak akan mempengaruhi function nya
-
-console.log(add())
-console.log(add())
-console.log(add())
-console.log(add())
+let a = add
 console.log(add())
