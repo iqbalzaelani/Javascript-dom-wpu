@@ -22,14 +22,14 @@ console.log(r)
 
 //disini saya akan mengubah function scope javascript menjadi block scope agar sama seperti program lain dengan menggunakan function
 //jadi dia tidak akan bisa mengakses diluar block
-function tes(){
-    for(var e =0; e < 10; e++){
-        console.log(e)
-    }
-    console.log(e)
-}
-tes()
-console.log(e)
+// function tes(){
+//     for(var e =0; e < 10; e++){
+//         console.log(e)
+//     }
+//     console.log(e)
+// }
+// tes()
+// console.log(e)
 
 
 
@@ -47,6 +47,21 @@ console.log(e)
 
 //jadi di sarankan menggunakan let jangan var dan anda dapat menggunakan const jika yakin bahwa variable nya tidak akan di ubah
 const y = 100
-y = 200
 console.log(y)
 //nah ini contoh penggunaan const dia bersifat variable tetap dan kalo kita mengubah isi variable nya dia akan error
+//kenapa bisa ada const karena untuk meminimalisir perubahan state jadi nilai variable tidak berubah
+
+//tetapi ada cara untuk mengubah const
+const mhs = {
+    nama: "Mohamad Iqbal Zaelani",
+    umur: 20
+}
+mhs.umur = 19 //dia akan bisa mengubah asal kita mengubah object di dalamnya
+//disini saya akan memberi contoh apabila membuat object baru
+mhs = {
+    jurusan: "Manajemen Informatika"
+}
+//disini dia akan error karena tidak dapat membuat object baru
+console.log(mhs)
+
+//jadi kesimpulannya kita tetap bisa mengganti const tapi tidak sepenuhnya makannya const untuk meminimalisir perubahan state
