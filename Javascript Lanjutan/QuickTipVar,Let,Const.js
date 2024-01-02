@@ -44,3 +44,9 @@ console.log(e)
 //javascript dulu itu variable nya bersifat global (var) tetapi sekarang udah es6 ada namanya let
 //jadi kita tidak perlu cape cape untuk membuat block scope agar variable tidak dapat di akses diluar tinggal pakai let aja
 //karena let menganut block scope
+
+//jadi di sarankan menggunakan let jangan var dan anda dapat menggunakan const jika yakin bahwa variable nya tidak akan di ubah
+const y = 100
+y = 200
+console.log(y)
+//nah ini contoh penggunaan const dia bersifat variable tetap dan kalo kita mengubah isi variable nya dia akan error

@@ -161,6 +161,7 @@ function Buruh(nama, energy){
 let buruh1 = Buruh('Mohamad', 10)
 let buruh2 = Buruh('Iqbal', 10)
 let buruh3 = Buruh('Zaelani', 10)
+let buruh4 = Buruh('Mohamad Iqbal Zaelani', 30)
 
 
 
@@ -201,6 +202,10 @@ Human.prototype.bergadang = function(jam){
 Human.prototype.enggamakan = function(porsi){
     this.energy -= porsi 
     return `Tidak makan membuat sakit ${this.nama}, makanlah`
+}
+Human.prototype.bermain = function(main){
+    this.energy -= main
+    return `Selamat Bermain ${this.nama}, bermain`
 }
 let bal = new Human('Mohamad Iqbal Zaelani', 10)
 let bal2 = new Human('Mohamad Iqbal Zaleani', 10)
