@@ -142,6 +142,10 @@ const methodBuruh = {
     olahraga: function(set){
         this.energy += set * 2
         console.log(`Jangan lupa air putih ${this.nama}, hebat`)
+    },
+    bermain: function(set){
+        this.energy -= set
+        console.log(`Jangan lupa beristirahat ${this.nama}, come go`)
     }
 }
 
