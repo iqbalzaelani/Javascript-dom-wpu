@@ -30,6 +30,15 @@ const Mahasiswa3 = function(){
     }
 }
 const Zaelani = new Mahasiswa3()
+
+const Mahasiswa4 = function(){
+    this.nama = 'Iqbal Zaelani'
+    this.umur = '20'
+    this.HelloWorld = () => {
+        console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`)
+    }
+}
+const Miz = new  Mahasiswa4()
 //Jika kita buka console tidak terlihat perbedaan menggunakan function biasa atau arrow function
 //Nah penjelasannya jika kita menggunakan arrow function sebenarnya dia tidak meyimpan konteks this di dalam funtion sayHellow 
 //tetapi dia akan mencari keluar
