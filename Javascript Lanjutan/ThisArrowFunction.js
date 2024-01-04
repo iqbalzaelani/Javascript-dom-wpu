@@ -125,7 +125,25 @@ const iqbalzaelani = new Magang()
 
 
 //Latihan arrow function dengan studi kasus membuat box kotak
-const box = document.querySelector('box')
-box.addEventListener('click', function(){
-    console.log(this)
+//jadi disini ketika di klik ingin memberikan si kotak itu class
+const box = document.querySelector('.box')
+box.addEventListener('click', function () {
+    let satu = 'size' //disini saya membuat variable untuk animasinya, kenapa menggunakan let ?karena saya mau ubah variable di dalamnya
+    let dua = 'caption'     //disini saya membuat variable untuk animasinya, kenapa menggunakan let ?karena saya mau ubah variable di dalamnya
+
+    if(this.classList.contains(satu)){
+        [satu, dua] = [dua, satu]       //disini saya membuat ini agar animasinya sesuai saat terbalik
+    }
+
+
+    this.classList.toggle('size')
+    //nah jika kita tidak menggunakan arrow function pemangggilan class tidak akan berhasil
+    // setTimeout(function(){
+    //     this.classList.toggle('caption')
+    // console.log(this)
+
+    //penggunaan arrow function
+    setTimeout(() => {
+        this.classList.toggle('caption') //kenapa berhasil karenya this nya berpacu pada box
+    }, 600)
 })
