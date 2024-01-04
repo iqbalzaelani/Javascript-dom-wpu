@@ -31,6 +31,14 @@ let mahasiswa3 = {
         console.log(`tidur bagus untuk pertumbuhan ${this.nama}, selamat tidur`)
     }
 }
+let mahasiswa4 = {
+    nama: 'Zaelani Mohamad Iqbal',
+    energy: 10,
+    kerja: function(jam){
+        this.energy = this.energy - jam
+        console.log(`Semangat bekerja ${this.nama}, semangat`)
+    }
+}
 //Object Literal pakai {} yang isinya properti
 //method, method adalah fuction di dalam object
 //method disini makan
@@ -117,6 +125,7 @@ function Siswa(nama, energy){
 
 let Zaelani = new Siswa('Mohamad Iqbal Zaelani', 20)
 let Sumbul = new Siswa('Mohamad Sumbul', 10)
+let MohamadIqbalZaelani = new Siswa('Zaelani Mohamad Iqbal', 20)
 //kenapa harus pakai new kalo tidak dia akan return sama deklarasi variable
 
 
@@ -226,3 +235,4 @@ Human.prototype.bekerja = function(jam){
 let bal = new Human('Mohamad Iqbal Zaelani', 10)
 let bal2 = new Human('Mohamad Iqbal Zaleani', 10)
 let bal3 = new Human('Mobamad Iqbal Zaelani', 10)
+let bal4 = new Human('Mohamad Sumbul', 10)
