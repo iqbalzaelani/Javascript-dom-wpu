@@ -11,6 +11,14 @@ const Mahasiswa = function(){
 }
 const Iqbal = new Mahasiswa()
 
+const Mahasiswa5 = function(){
+    this.nama = 'Inaleaz Labqi Damahom'
+    this.umur = '20'
+    this.sayHello = function (){
+        console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`)
+    }
+}
+
 const Mahasiswa2 = function(){
     this.nama = 'iqbal'
     this.umur = '20'
@@ -25,11 +33,19 @@ const Mohamad = new Mahasiswa2()
 const Mahasiswa3 = function(){
     this.nama = 'Zaelani'
     this.umur = '20'
-    this.sayHello = () => {
+    this.sayHello = () => { 
         console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`)
     }
 }
 const Zaelani = new Mahasiswa3()
+
+const Mahasiswa6 = function(){
+    this.nama = 'Zaelani Iqbal Mohamad'
+    this.umur = '20'
+    this.sayHello = () => {
+        console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`)
+    }
+}
 
 const Mahasiswa4 = function(){
     this.nama = 'Iqbal Zaelani'

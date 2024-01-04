@@ -105,6 +105,10 @@ function Siswa(nama, energy){
         this.energy -= jam *2
         console.log(`Kebodohan ${this.nama}, Jangan di ulang`)
     }
+    this.bekerja = function(jam){
+        this.energy -= jam
+        console.log(`Semangat Bekerja ${this.jam}, Semangat`)
+    }
 }
 
 let Zaelani = new Siswa('Mohamad Iqbal Zaelani', 20)
@@ -146,6 +150,10 @@ const methodBuruh = {
     bermain: function(set){
         this.energy -= set
         console.log(`Jangan lupa beristirahat ${this.nama}, come go`)
+    },
+    bekerja: function(jam){
+        this.energy -= jam
+        console.log(`Semangat bekerja ${this.jam}, semangat`)
     }
 }
 
@@ -206,6 +214,10 @@ Human.prototype.enggamakan = function(porsi){
 Human.prototype.bermain = function(main){
     this.energy -= main
     return `Selamat Bermain ${this.nama}, bermain`
+}
+Human.prototype.bekerja = function(jam){
+    this.energy -= jam
+    return `Semangat Bekerja ${this.jam}, semangat`
 }
 let bal = new Human('Mohamad Iqbal Zaelani', 10)
 let bal2 = new Human('Mohamad Iqbal Zaleani', 10)
