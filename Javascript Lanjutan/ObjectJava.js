@@ -68,6 +68,10 @@ function Mahasiswa(nama, energy){
         this.energy -= jam * 2
         console.log(`Kebodohan ${this.nama}, Jangan di ulang`)
     }
+    mahasiswa.magang = function(jam){
+        this.energy -= jam
+        console.log(`Semangat magang ${this.jam}, Semangat magang`)
+    }
 
     return mahasiswa
 }
