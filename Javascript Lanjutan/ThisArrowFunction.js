@@ -125,3 +125,7 @@ const iqbalzaelani = new Magang()
 
 
 //Latihan arrow function dengan studi kasus membuat box kotak
+const box = document.querySelector('box')
+box.addEventListener('click', function(){
+    console.log(this)
+})
