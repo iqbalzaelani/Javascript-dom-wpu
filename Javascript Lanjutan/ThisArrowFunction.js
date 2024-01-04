@@ -46,3 +46,17 @@ const Miz = new  Mahasiswa4()
 
 //Object Literal
 //Disini saya membuat object literal agar penggunaan this function keliatan lebih berbeda
+const mhs1 = {
+    nama : 'Mohamad Iqbal Zaelani',
+    umur : 20,
+    sayHello: function(){
+        console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`)
+    }
+    //jika si sayhellow saya ganti jadi arrow function
+    // sayHello: () => {
+    //     console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`)
+    // }
+    //Nama dan Umur nya akan undefined karena si arrow function ini dia akan mencari this ke atas jika tidak ada dia akan mencari sampai ke windows
+    //kalo di windows engga ada makan dia akan menampilkan undefined
+    //arrow function tidak memiliki konsep this
+}
