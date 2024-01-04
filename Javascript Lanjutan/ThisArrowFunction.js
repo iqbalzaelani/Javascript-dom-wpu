@@ -98,3 +98,30 @@ const mhs1 = {
     //kalo di windows engga ada makan dia akan menampilkan undefined
     //arrow function tidak memiliki konsep this
 }
+
+//coba contoh lainnya
+const Magang = function(){
+    this.nama = 'Iqbal'
+    this.umur = 20
+    this.sayHello = function(){
+        console.log
+        (`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`)
+    }
+
+    //disini saya menambahkan function declaration
+    //nah disini karena tidak menggunakan function dia akan undifined karena dia akan mencari ke global apakah this ada
+    // setInterval(function (){
+    //     console.log(this.umur)
+    // }, 500)
+    
+    //disini saya menggunakan arrow function
+    setInterval(() => {
+        console.log(this.umur)
+    }, 500)
+    //nah dia akan muncul karena si this arrow function ini dia akan mencari di luar fucnction nya bukan di global
+}
+const iqbalzaelani = new Magang()
+
+
+
+//Latihan arrow function dengan studi kasus membuat box kotak
