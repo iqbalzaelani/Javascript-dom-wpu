@@ -6,8 +6,10 @@ const Mahasiswa = function(){
     this.nama = 'Mohamad Iqbal Zaelani'
     this.umur = '20'
     this.hobi = 'main ps'
+    this.agama = 'islam'
     this.sayHello = function (){
-        console.log(`Halo, nama saya ${this.nama}, hobi saya ${this.hobi}, dan saya ${this.umur} tahun.`)
+        console.log
+        (`Halo, nama saya ${this.nama}, hobi saya ${this.hobi}, agama saya${this.agama}, dan saya ${this.umur} tahun.`)
     }
 }
 const Iqbal = new Mahasiswa()
@@ -16,8 +18,11 @@ const Mahasiswa5 = function(){
     this.nama = 'Inaleaz Labqi Damahom'
     this.umur = '20'
     this.hobi = 'main ps'
+    this.agama = 'kristen'
+    this.semester = '1'
     this.sayHello = function (){
-        console.log(`Halo, nama saya ${this.nama}, hobi saya${this.hobi}, dan saya ${this.umur} tahun.`)
+        console.log
+        (`Halo, nama saya ${this.nama}, hobi saya${this.hobi}, agama saya${this.agama}, saya semester${this.semester}, dan saya ${this.umur} tahun.`)
     }
 }
 
@@ -25,8 +30,10 @@ const Mahasiswa2 = function(){
     this.nama = 'iqbal'
     this.umur = '20'
     this.hobi = 'main ps'
+    this.agama = 'krislam'
     this.HelloWorld = function(){
-        console.log(`Halo, nama saya${this.nama}, hobi saya${this.hobi}, dan saya ${this.umur} tahun.`)
+        console.log
+        (`Halo, nama saya${this.nama}, hobi saya${this.hobi}, agama saya${this.agama}, dan saya ${this.umur} tahun.`)
     }
 }
 const Mohamad = new Mahasiswa2()
@@ -37,8 +44,10 @@ const Mahasiswa3 = function(){
     this.nama = 'Zaelani'
     this.umur = '20'
     this.hobi = 'main ps'
+    this.agama = 'krislam'
     this.sayHello = () => { 
-        console.log(`Halo, nama saya ${this.nama}, hobi saya${this.hobi}, dan saya ${this.umur} tahun.`)
+        console.log
+        (`Halo, nama saya ${this.nama}, hobi saya${this.hobi}, agama saya${this.agama}, dan saya ${this.umur} tahun.`)
     }
 }
 const Zaelani = new Mahasiswa3()
@@ -47,17 +56,21 @@ const Mahasiswa6 = function(){
     this.nama = 'Zaelani Iqbal Mohamad'
     this.umur = '20'
     this.hobi = 'main ps'
+    this.agama = 'krislam'
     this.sayHello = () => {
-        console.log(`Halo, nama saya ${this.nama}, hobi saya${this.hobi} dan saya ${this.umur} tahun.`)
-    }
+        console.log
+        (`Halo, nama saya ${this.nama}, hobi saya${this.hobi}, agama saya${this.agama}, dan saya ${this.umur} tahun.`)
+    }   
 }
 
 const Mahasiswa4 = function(){
     this.nama = 'Iqbal Zaelani'
     this.umur = '20'
     this.hobi = 'main ps'
+    this.agama = 'krislam'
     this.HelloWorld = () => {
-        console.log(`Halo, nama saya ${this.nama},hobi saya${this,this.hobi}, dan saya ${this.umur} tahun.`)
+        console.log
+        (`Halo, nama saya ${this.nama},hobi saya${this,this.hobi}, agama saya${this.agama}, dan saya ${this.umur} tahun.`)
     }
 }
 const Miz = new  Mahasiswa4()
@@ -70,15 +83,17 @@ const Miz = new  Mahasiswa4()
 //Disini saya membuat object literal agar penggunaan this function keliatan lebih berbeda
 const mhs1 = {
     nama : 'Mohamad Iqbal Zaelani',
-    umur : 20,
-    hobi : 'main ps',
-    sayHello: function(){
-        console.log(`Halo, nama saya ${this.nama}, hobi saya${this.hobi}, dan saya ${this.umur} tahun.`)
-    }
-    //jika si sayhellow saya ganti jadi arrow function
-    // sayHello: () => {
-    //     console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`)
+    umur : '20',
+    hobi : 'main FF',
+    agama: 'Krislam',
+    // sayHello: function(){
+    //     console.log
+    //     (`Halo, nama saya ${this.nama}, hobi saya${this.hobi}, agama saya${this.agama} dan saya ${this.umur} tahun.`)
     // }
+    //jika si sayhellow saya ganti jadi arrow function
+    sayHello: () => {
+        console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`)
+    }
     //Nama dan Umur nya akan undefined karena si arrow function ini dia akan mencari this ke atas jika tidak ada dia akan mencari sampai ke windows
     //kalo di windows engga ada makan dia akan menampilkan undefined
     //arrow function tidak memiliki konsep this
