@@ -6,10 +6,11 @@
 //Selection DOM Javascript
 //document.getElementById() -> element
 const judul = document.getElementById('judul')
-judul.innerHTML = "Alvin"
+judul.innerHTML = "Iqbal"
 judul.style.backgroundColor = 'red'
 judul.style.color = 'white'
 judul.style.fontFamily = 'times'
+judul.style.fontSize = '40px'
 
 //document.getElementByTagName()
 // -> HTMLCollections jadi meskipun elemen p ada satu tetap harus menggunakan index[] karena merupakan html collections
@@ -41,6 +42,10 @@ h1.style.fontFamily = 'Arial'
 // -> HTMLCollections
 const p1 = document.getElementsByClassName('p1')
 p1[0].innerHTML = 'Di ubah melalui javascript cara kesatu'
+p1[0].style.fontFamily = 'arial'
+p1[0].style.fontSize = '6px'
+p1[0].style.backgroundColor = 'red'
+p1[0].style.color = 'black'
 
 //document.querySelector() -> element
 const p4 = document.querySelector('#b p');

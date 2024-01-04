@@ -114,7 +114,7 @@ sectionB.replaceChild(h2Baru, p4) //aturan mainnya panggil dulu parent yaitu sec
 pBaru.style.backgroundColor = 'lightgreen'
 pBaru.style.color = 'white'
 pBaru.style.fontFamily = 'arial'
-pBaru.style.fontSize = '20px'
+pBaru.style.fontSize = '30px'
 
 liBaru.style.backgroundColor = 'lightblue'
 liBaru.style.color = 'white'

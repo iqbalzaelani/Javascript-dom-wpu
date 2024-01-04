@@ -123,9 +123,11 @@ function Siswa(nama, energy){
     }
 }
 
-let Zaelani = new Siswa('Mohamad Iqbal Zaelani', 20)
-let Sumbul = new Siswa('Mohamad Sumbul', 10)
-let MohamadIqbalZaelani = new Siswa('Zaelani Mohamad Iqbal', 20)
+let Zaelani = new Siswa('Mohamad Iqbal Zaelani', 21)
+let Sumbul = new Siswa('Mohamad Sumbul', 9)
+let MohamadIqbalZaelani = new Siswa('Zaelani Mohamad Iqbal', 3)
+let SumbulKarawitan = new Siswa('Sumbul Karawitan', 3)
+let IqbalSumbul = new Siswa('ZaelaniSumbul', 7)
 //kenapa harus pakai new kalo tidak dia akan return sama deklarasi variable
 
 
@@ -179,10 +181,12 @@ function Buruh(nama, energy){
     return buruh
 }
 
-let buruh1 = Buruh('Mohamad', 10)
-let buruh2 = Buruh('Iqbal', 10)
-let buruh3 = Buruh('Zaelani', 10)
-let buruh4 = Buruh('Mohamad Iqbal Zaelani', 30)
+let buruh1 = Buruh('Mohamad', 3)
+let buruh2 = Buruh('Iqbal', 9)
+let buruh3 = Buruh('Zaelani', 5)
+let buruh4 = Buruh('Mohamad Iqbal Zaelani', 11)
+let buruh5 = Buruh('Sumbul Karawitan', 2)
+let buruh6 = Buruh('Iqbal Sumbul', 19)
 
 
 
@@ -232,7 +236,9 @@ Human.prototype.bekerja = function(jam){
     this.energy -= jam
     return `Semangat Bekerja ${this.jam}, semangat`
 }
-let bal = new Human('Mohamad Iqbal Zaelani', 10)
-let bal2 = new Human('Mohamad Iqbal Zaleani', 10)
-let bal3 = new Human('Mobamad Iqbal Zaelani', 10)
-let bal4 = new Human('Mohamad Sumbul', 10)
+let bal = new Human('Mohamad Zaelani Iqbal', 7)
+let bal2 = new Human('Zaleani Iqbal Mohamad', 9)
+let bal3 = new Human('Mobamad Iqbal Zaelani', 15)
+let bal4 = new Human('Mohamad Sumbul', 2)
+let bal5 = new Human('Iqbal Sumbul', 5)
+let bal6 = new Human('Sumbul Mohamad Iqbal', 11)
