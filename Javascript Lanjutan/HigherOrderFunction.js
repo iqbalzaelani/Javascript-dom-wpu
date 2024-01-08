@@ -63,6 +63,6 @@ repeat(3, alert)
 //dan akan membuat program kita lebih efektif lebih aman dan lebih efisien
 
 //Beberapa contoh higher order funtion yang sering digunakan
-//Array.prototype.map() //untuk mapping pada array
+//Array.prototype.map() //untuk mapping pada array  
 //Array.prototype.filter() //untuk seleksi isi array
 //Array.prototype.reduce()
