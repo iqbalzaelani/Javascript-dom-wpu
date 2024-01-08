@@ -13,6 +13,7 @@ function kerjakanTugas(matakuliah, selesai){
 //function kerjakanTugas disini kita bisa memanggilnya Higher Order Function
 //function argumen disini (selesai) bisa kita panggil dengan callback
 //jadi function yang memiliki callback di dalamnya itu bisa kita sebut dengan Higher Order Function
+//callback merupakan function yang di teruskan sebagai argumen ke function lain
 
 //contoh lainnya
 function ucapkanSalam(waktu){
@@ -64,4 +65,4 @@ repeat(3, alert)
 //Beberapa contoh higher order funtion yang sering digunakan
 //Array.prototype.map() //untuk mapping pada array
 //Array.prototype.filter() //untuk seleksi isi array
-//Array.prototype.reduce() 
+//Array.prototype.reduce()
