@@ -7,9 +7,10 @@ const Mahasiswa = function(){
     this.umur = '20'
     this.hobi = 'main ps'
     this.agama = 'islam'
+    this.semester = '3'
     this.sayHello = function (){
         console.log
-        (`Halo, nama saya ${this.nama}, hobi saya ${this.hobi}, agama saya${this.agama}, dan saya ${this.umur} tahun.`)
+        (`Halo, nama saya ${this.nama}, hobi saya ${this.hobi}, agama saya${this.agama}, dan saya ${this.umur} tahun, semester${this.semester}.`)
     }
 }
 const Iqbal = new Mahasiswa()
