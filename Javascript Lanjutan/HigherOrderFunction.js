@@ -33,14 +33,21 @@ console.dir(selamatMalam('iqbal'))
 for (let i = 0; i < 10; i++){
     console.log(i)
 }
-//bagaimana saya ingin mengganti 10 jadi 1000 tanpa mengganti looping nya
+//nah bagaimana jika saya mau looping nya 100x atau 1000x
+
+//nah di bawah ini lebih simple lagi
+//disini saya menggunakan sebuah funtion jadi nulis for nya cuman sekali angka 10 di ganti variable n yang jadi argumen repeat log
+//jadi kalo mau mengulang sebanyak apapun tinggal panggil repeat log dan panggil parameternya berapa tanpa mengubah lagi looping nya
 function repeatLog(n){
     for (let i=0; i<n; i++){
         console.log(i)
     }
 }
 repeatLog(10)
-//ada juga yang lebih simple
+
+//ada juga yang lebih efektif lagi menggunakan code di bawah ini
+//disini saya melakukan aksi nya bukan menggunakan console tapi alrert
+//function repeat log nya jadi function repeat dan di dalamnya terdapat 2 argumen yaitu n dan action parameter action ini berupa function
 function repeat(n, action){
     for(let i = 0; i < n; i++){
         action()
@@ -48,3 +55,13 @@ function repeat(n, action){
 }
 repeat(10, console.log)
 repeat(3, alert)
+
+//jadi lebih efektif menggunakan higher order function
+//alasan yang lain dengan higher order function kita akan terbiasa memasukan segala sesuatu ke dalam function
+//secara tidak langsung kita membuat javascript jadi sebuah bahasa pemograman functional
+//dan akan membuat program kita lebih efektif lebih aman dan lebih efisien
+
+//Beberapa contoh higher order funtion yang sering digunakan
+//Array.prototype.map() //untuk mapping pada array
+//Array.prototype.filter() //untuk seleksi isi array
+//Array.prototype.reduce() 
