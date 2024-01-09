@@ -36,7 +36,7 @@ let jsLanjut = videos.filter(video => video.textContent.includes('JAVASCRIPT LAN
 const jam = Math.floor(jsLanjut / 3600)
 jsLanjut = jsLanjut - jam * 3600
 const menit = Math.floor(jsLanjut / 60)
-const detik = jsLanjut - menit * 60
+const detik = jsLanjut - menit * 60 
 
 
 // simpan di dom
