@@ -1,0 +1,2 @@
+//String Literal Template atau biasa dikenal juga sebagai Template Literals
+//merupakan fitur yang diperkenalkan dalam ECMAScript 6(ES6) yang memungkinkan pemograman untuk bekerja secara efisien dengan string
