@@ -34,16 +34,32 @@ console.log(`
 MultiLineString 1   //cara kedua
 MultiLineString 2
 `)
-//Multi-line String bisa digunakan pada HTML Fragments contohnya
+//Multi-line String bisa digunakan pada HTML Fragments
+//ini contoh cara biasa
 const mhs = {
     nama: 'Mohamad Iqbal Zaelani',
     umur: 20,
     nomor: '121212',
     email: 'mohamad@gmail.com'
 }
-//lalu
+//lalu ini jika menggunakan template literals tinggal menambahkan back tick lalu masukan html nya tanpa harus menggabungkan melalui concat
 let el = `<div class="mhs">
     <h2>${mhs.nama}</h2>
     <span class="nomor">${mhs.nomor}
     </div>`
 console.log(el)
+
+//Embedded Expression
+//Kita bisa menyimpan expression ke dalam template literal
+const nama = 'Mohamad Iqbal Zaelani'
+let umur = 20
+console.log(`Halo, perkenalkan nama saya ${nama}, saya ${umur} tahun,`)
+//expression ini juga bisa kita langsung polasi misalnya di dalam expression nya terdapat penjumlahan
+let a = 10
+let b = 15
+console.log('Jika a = 10 dan b = 15, maka hasil penjumlahan adalah :' + (a + b) + ',bukan' + (2 * a + b))
+
+//tetapi dengan template literal lebih simple tinggal menggunakan back tick 
+let c = 10
+let d = 15
+console.log(`Jika a = 10 dan b = 15, maka hasil penjumlahann adalah : ${a + b}, bukan${2 * a + b}`)
