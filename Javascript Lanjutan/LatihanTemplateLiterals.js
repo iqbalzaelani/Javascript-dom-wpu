@@ -36,11 +36,11 @@ const magang = [
 //disini saya mau looping data nya menggunakan data yang ada
 //seperti yang tadi membuat elemen yang nanti di looping nya menggunakan expression method map higher order function ke magang
 //yang di dalamnya terdapat item dan template literals lalu isinya list dan data
-const elmagang = `<div class="magang">
+const elmagang = `<div class="magang"> 
 ${magang.map(m => `<ul>
 <li>${m.nama}</li>
 <li>${m.email}</li>
 </ul>`)}
 </div>`
 //Menampilkan melalui dom body
-document.body.innerHTML = elmagang
+document.body.innerHTML = elmagang  
