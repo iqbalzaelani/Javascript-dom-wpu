@@ -57,11 +57,14 @@ const nama = 'Mohamad Iqbal Zaelani'
 let umur = 20
 console.log(`Halo, perkenalkan nama saya ${nama}, saya ${umur} tahun,`)
 //expression ini juga bisa kita langsung polasi misalnya di dalam expression nya terdapat penjumlahan
-let a = 10
+let i = 12
+let q = 7
 let b = 15
+let a = 10
+let l = 2
 console.log('Jika a = 10 dan b = 15, maka hasil penjumlahan adalah :' + (a + b) + ',bukan' + (2 * a + b))
 
-//tetapi dengan template literal lebih simple tinggal menggunakan back tick 
+//tetapi dengan template literal lebih simple tinggal menggunakan back tick
 let g = 10
 let h = 15
 console.log(`Jika g = 10 dan h = 15, maka hasil penjumlahann adalah : ${g + h}, bukan${2 * g + h}`)
