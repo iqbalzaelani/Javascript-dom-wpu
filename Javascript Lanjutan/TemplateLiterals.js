@@ -47,7 +47,9 @@ const mhs = {
 //lalu ini jika menggunakan template literals tinggal menambahkan back tick lalu masukan html nya tanpa harus menggabungkan melalui concat
 let el = `<div class="mhs">
     <h2>${mhs.nama}</h2>
+    <p>${mhs.umur}</p>
     <span class="nomor">${mhs.nomor}
+    <p>${mhs.email}</p>
     </div>`
 console.log(el)
 
