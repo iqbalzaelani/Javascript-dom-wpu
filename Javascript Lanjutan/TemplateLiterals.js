@@ -8,7 +8,9 @@
 //Contoh string literal  ''""``
 let contohstringliteral1 = 'Iqbal'  //kalo menggunakan '' dan "" sama aja
 let contohstringliteral2 = "123321" //kalo menggunakan '' dan "" sama aja
-let contohstringliteral3 = `mohamadiqbaalzaelani@gmail.com` //untuk back tick sendiri kita bisa :
+let contohstringliteral3 = `mohamadiqbaalzaelani@gmail.com` //untuk back tick sendiri kita bisa melakukan segala cara
+
+//Yang bisa di lakukan Template Literal
 //Membuat template literal
 //Multi-line String
 //Embedded Expression
