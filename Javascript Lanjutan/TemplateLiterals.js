@@ -67,4 +67,4 @@ console.log('Jika a = 10 dan b = 15, maka hasil penjumlahan adalah :' + (a + b) 
 //tetapi dengan template literal lebih simple tinggal menggunakan back tick
 let g = 10
 let h = 15
-console.log(`Jika g = 10 dan h = 15, maka hasil penjumlahann adalah : ${g + h}, bukan${2 * g + h}`)
+console.log(`Jika g = 10 dan h = 15, maka hasil penjumlahann adalah : ${g + h}, bukan${2 * g + h}`) 
