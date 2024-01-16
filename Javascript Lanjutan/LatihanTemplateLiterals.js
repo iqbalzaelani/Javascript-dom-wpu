@@ -81,7 +81,7 @@ const ellagu = `<div class="lagu">
 // HTML Fragments bersarang
 const kerja = {
     nama: 'Beberapa Pekerjaan IT',
-    jumlah: 7,
+    jumlah: 8,
     namaBidang: [
         'Information Security Analyst', 
         'Artificial Intelligence (AI) / Machine Learning Engineer',
@@ -89,7 +89,8 @@ const kerja = {
         'Web Developer', 
         'Software Development Engineer',
         'Computer Hardware Engineer',
-        'Cloud Architect'
+        'Cloud Architect',
+        'aaa kasian aaa'
     ]
 }
 //untuk bagian nama bidang saya buat melalui function jadi function terpisah dan memakai expression
