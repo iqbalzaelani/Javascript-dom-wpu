@@ -21,16 +21,24 @@ const el = `<div class="mhs">
 //sekarang isinya array yang ada object nya
 const magang = [
     {
-        nama: 'Zaelani',
-        email: 'zaelani@gmail.com'
+        nama: 'Zaelani Iqbal Mohamad',
+        email: 'ZaelaniMohamadIqbal@gmail.com',
+        umur: '20'
     },
     {
-        nama: 'Mohamad',
-        email: 'mohamad@gmail.com'
+        nama: 'Mohamad Zaelani Iqbal',
+        email: 'MohamadZaelaniIqbal@gmail.com',
+        bidang: 'Teknologi'
     },
     {
-        nama: 'Iqbal',
-        email: 'iqbal@gmail.com'
+        nama: 'Iqbal Zaelani Mohamad',
+        email: 'IqbalZaelaniMohamad@gmail.com',
+        bagian: 'Front End Developer'
+    },
+    {
+        nama: 'Zaelani Mohamad Iqbal',
+        email: 'ZaelaniMohamadIqbal@gmail.com',
+        lamawaktu: '4 Bulan'
     }
 ]
 //disini saya mau looping data nya menggunakan data yang ada
