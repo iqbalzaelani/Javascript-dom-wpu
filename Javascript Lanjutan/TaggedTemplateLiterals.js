@@ -4,15 +4,16 @@ const nama = 'Mohamad Iqbal Zaelani'
 const umur = 20
 const email = 'MohamadIqbalZaelani@gmail.com'
 const ntlp = '087820159674'
+const alamat = 'Jl Astanaanyar'
 
-function coba(strings, nama, umur, email, ntlp){
-    return ntlp
+function coba(strings, nama, umur, email, ntlp, alamat){
+    return alamat
 }
 
 // const str = `Halo, nama saya${nama}, saya berumur${umur}` //ini template literals biasa
 
 const str = coba`Halo, nama saya${nama}, saya berumur${umur}, 
-alamat email saya${email}, no telepon${ntlp}` //ini penggunaan tagged template literals
+alamat email saya${email}, no telepon${ntlp}, alamat${alamat}` //ini penggunaan tagged template literals
 //kalo tagged template literals kita akan memasukan tag di dalam function
-//javascript punya      
+//javascript punya  
 console.log(str) 
