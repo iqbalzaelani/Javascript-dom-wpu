@@ -23,22 +23,26 @@ const magang = [
     {
         nama: 'Zaelani Iqbal Mohamad',
         email: 'ZaelaniMohamadIqbal@gmail.com',
-        umur: '20'
+        umur: '20',
+        alamat: 'JL ASTANAANYAR'
     },
     {
         nama: 'Mohamad Zaelani Iqbal',
         email: 'MohamadZaelaniIqbal@gmail.com',
-        bidang: 'Teknologi'
+        bidang: 'Teknologi',
+        alamat: 'BOJONGLOA KALER'
     },
     {
         nama: 'Iqbal Zaelani Mohamad',
         email: 'IqbalZaelaniMohamad@gmail.com',
-        bagian: 'Front End Developer'
+        bagian: 'Front End Developer',
+        alamat: 'KOPO SAYATI'
     },
     {
         nama: 'Zaelani Mohamad Iqbal',
         email: 'ZaelaniMohamadIqbal@gmail.com',
-        lamawaktu: '4 Bulan'
+        lamawaktu: '4 Bulan',
+        alamat: 'BATUNUNGGAL'
     }
 ]
 //disini saya mau looping data nya menggunakan data yang ada
