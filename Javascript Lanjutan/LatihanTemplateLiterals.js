@@ -58,6 +58,9 @@ const elmagang = `<div class="magang">
 ${magang.map(m => `<ul>
 <li>${m.nama}</li>
 <li>${m.email}</li>
+<li>${m.alamat}</li>
+<li>${m.lamawaktu}</li>
+<li>${m.ntlp}</li>
 </ul>`).join('')}
 </div>`
 //Menampilkan melalui dom body
@@ -86,12 +89,24 @@ const ellagu = `<div class="lagu">
 //tetapi kalo engga ada kosongin aja  ${lagu.feat ? `(feat. ${lagu.feat})` : ''
 // document.body.innerHTML = ellagu
 
+//tanpa feat
+const tanpafeat = {
+    judul: 'Joss Gandoss',
+    penyanyi: 'Mamat Beol',
+}
+const tanpafeatlagu = `<div class="tanpafeat">
+<ul>
+<li>${tanpafeat.penyanyi}</li>
+<li>${tanpafeat.judul} ${tanpafeat.feat ? `(feat. ${lagu.feat})` : '' }</li>
+</ul>
+</div>`
+
 
 // 4. Nested
 // HTML Fragments bersarang
-const kerja = {
+const kerja = {   
     nama: 'Beberapa Pekerjaan IT',
-    jumlah: 9,
+    jumlah: 10,
     namaBidang: [
         'Information Security Analyst', 
         'Artificial Intelligence (AI) / Machine Learning Engineer',
@@ -100,6 +115,7 @@ const kerja = {
         'Software Development Engineer',
         'Computer Hardware Engineer',
         'Cloud Architect',
+        'Mohamad Iqbal Zaelani',
         'aaa kasian aaa',
         'teh kasian teh'
     ]
