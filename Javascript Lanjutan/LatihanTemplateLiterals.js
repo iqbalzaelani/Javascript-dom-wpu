@@ -72,14 +72,16 @@ const ellagu = `<div class="lagu">
 // 4. Nested
 // HTML Fragments bersarang
 const kerja = {
-    nama: 'Website',
-    jumlah: 5,
+    nama: 'Beberapa Pekerjaan IT',
+    jumlah: 7,
     namaBidang: [
-        'FrontEndDeveloper', 
-        'BackEndDeveloper',
-        'Techinal Support', 
-        'UI/UX', 
-        'MobileDeveloper'
+        'Information Security Analyst', 
+        'Artificial Intelligence (AI) / Machine Learning Engineer',
+        'Data Scientist', 
+        'Web Developer', 
+        'Software Development Engineer',
+        'Computer Hardware Engineer',
+        'Cloud Architect'
     ]
 }
 //untuk bagian nama bidang saya buat melalui function jadi function terpisah dan memakai expression
@@ -94,8 +96,8 @@ function cetakNamaBidang(namaBidang){
 //Menampilkan semua data ini ke html fragments
 const elkerja = `<div class="kerja">
 <h2>${kerja.nama}</h2>
-<span class="semester">jumlah bidang : ${kerja.jumlah}</span>
-<h4>Nama Bidang :</h4>
-${cetakNamaBidang(kerja.namaBidang)}
+<span class="semester">Jumlah Bidang Tertera : ${kerja.jumlah}</span>
+<h4>Nama Bidang :</h4> 
+${cetakNamaBidang(kerja.namaBidang)} 
 </div>`
-document.body.innerHTML = elkerja
+document.body.innerHTML = elkerja 
