@@ -12,5 +12,5 @@ function coba(strings, nama, umur, email){
 
 const str = coba`Halo, nama saya${nama}, saya berumur${umur}, alamat email saya${email}` //ini penggunaan tagged template literals
 //kalo tagged template literals kita akan memasukan tag di dalam function
-//javascript punya 
+//javascript punya   
 console.log(str) 
