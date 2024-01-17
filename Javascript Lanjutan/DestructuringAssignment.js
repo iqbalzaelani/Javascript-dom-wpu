@@ -46,7 +46,6 @@ console.log(empat)
 //const [satu, , , empat] = perkenalan jadi tinggal tulis aja seperti tadi namun isinya di hapus tapi tanda koma nya jgn di hapus
 
 
-
 // 2.Swap items atau menukar isinya
 let a = 1
 let b = 3
