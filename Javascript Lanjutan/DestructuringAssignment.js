@@ -1,4 +1,4 @@
-//Destructuring Variable atau bisa disebut juga Destructuring Assignment
+//Destructuring Variable atau bisa disebut juga Destructuring Assignment (PADA ARRAY DAN OBJECT)
 
 // Defisini 1
 // Expression pada javascript yg membuat kita dapat membongkar nilai dari array atau properti dari object kedalam variable yang terpisah
