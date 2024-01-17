@@ -65,4 +65,4 @@ function cobareturn(){
     return [1, 2]
 }
 const variableA = cobareturn()
-console.log(variableA)
+console.log(variableA)  
