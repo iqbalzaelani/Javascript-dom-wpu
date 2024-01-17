@@ -48,8 +48,7 @@ const mhs1 = {
         uas: 75
     }
 }
-function cetakMhs({nama, umur, nilai}){
-    return `Halo, nama saya ${nama}, saya berumur${umur} tahun. dan
-    nilai uas saya adalah ${nilai.uas}`
+function cetakMhs({ nama, umur, nilai: { tugas, uts, uas}}){
+    return `Halo, nama saya ${nama}, saya berumur ${umur} tahun, dan nilai uas saya adalah ${uas}`
 }
 console.log(cetakMhs(mhs1))
