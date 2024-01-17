@@ -27,8 +27,8 @@ function coba(strings, ...values){
 
 // const str = `Halo, nama saya${nama}, saya berumur${umur}` //ini template literals biasa
 
-const str = coba`Halo, nama saya${nama}, saya berumur${umur}, 
-alamat email saya${email}, no telepon${ntlp}, alamat${alamat}` //ini penggunaan tagged template literals
+const str = coba`Halo, nama saya ${nama}, saya berumur ${umur}, 
+alamat email saya ${email}, no telepon ${ntlp}, alamat ${alamat} ` //ini penggunaan tagged template literals
 //kalo tagged template literals kita akan memasukan tag di dalam function
 //javascript punya  
 console.log(str)    
