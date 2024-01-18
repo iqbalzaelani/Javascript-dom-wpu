@@ -6,7 +6,7 @@
 // Sebuah operator yang memecah (expand / unpack) sebuah iterables menjadi single element
 // Contohnya gini saya punya variable mhs yang di dalamnya ada array nah jika saya menambahkan ... pada saat pemanggilan array itu akan di pecah
 const mhsso = ['Mohamad', 'Iqbal', 'Zaelani']
-console.log(...mhssos) //spread operator 
+console.log(...mhsso) //spread operator 
 // console.log(...mhssos[0]) //disini saya memilih detail array mohamad maka akan dipecah juga array tersebut
 
 // Alasan Menggunakan Spread Operator
@@ -27,4 +27,14 @@ console.log(mhscp1)
 // Contoh lain
 // saya punya list di html dan saya ingin simpan di array
 const liMhs = document.querySelectorAll('li')
-console.log(liMhs)
+const mhsli = []
+for (let i = 0; i < liMhs.length; i++){
+    mhsli.push(liMhs[i].textContent)
+}
+console.log(mhsli)
+
+
+// Kasus disini saya punya nama di h1 saya kasih transisi sama style tetapi ketika saya arahkan kursornya saya inginnya per huruf bukan per kata
+const nama = document.querySelector('.nama')
+const huruf = [...nama.textContent].map(h => `<span>${h}</span>`).join('')  
+nama.innerHTML = huruf
