@@ -22,7 +22,7 @@ for (const m of mhs){
 // lebih simple seperti forEachs
 
 // >> Implementasi for..of Looping String
-const impnama = 'Mohamad Iqbal Zaelani'
+const impnama = 'IQBAL'
 for (const n of impnama){
     console.log(n)
 }
@@ -58,4 +58,25 @@ console.log(jumlahkanAngka(1, 2, 3, 4, 5))
 
 
 
+
+
 // 2. for..in
+// Jadi for in ini hanya untuk properti pada object
+const mhsfi = {
+    nama: 'Iqbal Ackerman',
+    umur: 20,
+    email: 'iqbalackerman@gmail.com'
+}
+
+//Nah jadi kalo mau looping properti nya itu kita pake for in kalo for of gabisa
+
+//contoh si mhsfi ini bukan iterale jadi akan error kalo kita looping seperti ini
+for (m in mhsfi){
+    console.log(m)       // tapi kalo si of nya jadi in dia akan mau
+}
+//CATATAN KALO MAU NGAMBIL VALUENYA JUGA BUKAN CUMAN INDEX PANNGIL NYA (mhs[m])
+
+//KESIMPULAN
+//Jadi kalo mau looping nya properti dari object pake nya for in
+//Sedangkan kalo mau mengolah isi array dan interable object yang lain pake nya for of
+
