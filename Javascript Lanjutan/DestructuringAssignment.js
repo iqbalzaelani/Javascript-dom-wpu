@@ -15,6 +15,13 @@ console.log(f)
 //nah kita bisa membuat string ini menjadi nilai nilai variable terpisah
 //untuk destructuring assigment ini kita cukup membuat array yang isinya abc kemudian di assign dengan contoh1 sehingga tidak perlu di assign satu2
 
+const contoharray = ['satu', 'dua', 'tiga']
+const [satuarray, duaarray, tigaaray] = contoharray
+console.log(satuarray)
+console.log(duaarray)
+console.log(tigaaray)
+
+
 //OBJECT
 const contoh2 = {
     nama1: 'Mohamad Iqbal Zaelani',
@@ -25,6 +32,7 @@ const {nama1, umur2, email3} = contoh2
 console.log(nama1)
 console.log(umur2)
 console.log(email3)
+
 //sama seperti array saya punya object literals lalu mau saya petakan menjadi variable tinggal pake sintaks destructuring agar tidak satu2
 //jadi tinggal variable isinya destructuring object lalu di assign ke variable contoh2
 
