@@ -36,3 +36,4 @@ const team = {
     devOps: 'bel'
 }
 const {pm, ...myTeam} = team    //pm iqbal sisanya dimasukan ke team pake rest parameter agar tidak satu satu
+console.log(myTeam)
