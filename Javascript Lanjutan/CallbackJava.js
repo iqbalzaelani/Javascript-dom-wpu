@@ -9,7 +9,7 @@ function halo(nama){
     alert(`Halo ${nama}`)
 }
 
-function tampilkanPesan(ck){
+function tampilkanPesan(callback){
     const nama = prompt('Masukan Nama :')
     callback(nama)
 }
