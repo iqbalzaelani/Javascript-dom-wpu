@@ -58,6 +58,7 @@ function tambah(a, b){
 console.log(tambah(2, 5))
 
 
+//Test
 const sum = (a, b) => {
      return a * b;
 }
