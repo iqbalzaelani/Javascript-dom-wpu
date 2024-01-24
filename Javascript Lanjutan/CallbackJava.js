@@ -5,16 +5,16 @@
 // Implementasi callback
 // 1. Synchronous Callback 
 // Jadi kasusnya saya akan menerima parameter dari function halo
-function halo(nama){
-    alert(`Halo ${nama}`)
-}
+// function halo(nama){
+//     alert(`Halo ${nama}`)
+// }
 
-function tampilkanPesan(callback){
-    const nama = prompt('Masukan Nama :')
-    callback(nama)
-}
-// Jadi parameternya adalah function dan parameter nya di panggil di dalam function
-tampilkanPesan(halo) // ketika kita masukan nama dan klik ok makan function callback nya di jalankan
+// function tampilkanPesan(callback){
+//     const nama = prompt('Masukan Nama :')
+//     callback(nama)
+// }
+// // Jadi parameternya adalah function dan parameter nya di panggil di dalam function
+// tampilkanPesan(halo) // ketika kita masukan nama dan klik ok makan function callback nya di jalankan
 
 
 
@@ -50,11 +50,30 @@ const mhs = [
 ]
 
 // Ini contoh synchronus jadi script nya di eksekusi dari atas ke bawah
-console.log('mulai')
-mhs.forEach(m => {
-    for (let i = 0; i < 10000000; i++){
-        let date = new Date()
-    }
-    console.log(m.nama)
-})
-console.log('selesai')
+
+function tambah(a, b){
+    var hasil = a + b;
+    return hasil;
+}
+console.log(tambah(2, 5))
+
+
+const sum = (a, b) => {
+     return a * b;
+}
+console.log(sum(4, 4));
+
+const kali = (a, b) => {
+    return a + b;
+}
+console.log(`Ini adalah kali ${kali(4, 4)}`);
+
+const bagi = (a, b) => {
+    return a / b;
+}
+console.log(`Ini adalah bagi ${bagi(4, 4)}`);
+
+const kurang = (a, b) => {
+    return a - b;
+}
+console.log(`Ini adalah kurang ${kurang(4, 4)}`);
