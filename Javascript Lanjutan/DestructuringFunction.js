@@ -52,3 +52,9 @@ function cetakMhs({ nama, umur, nilai: { tugas, uts, uas}}){
     return `Halo, nama saya ${nama}, saya berumur ${umur} tahun, dan nilai uas saya adalah ${uas}`
 }
 console.log(cetakMhs(mhs1))
+
+
+// test
+let testss = ["iqbal", "zaelani"]
+let [namadepan, namabelakang] = testss
+console.log(namadepan)
