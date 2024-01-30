@@ -1,6 +1,5 @@
 //Latihan disini saya akan menggunakan publik API (omdb api movie)
 $('.search-button').on('click', function(){
-
     $.ajax({
         url: 'http://www.omdbapi.com/?apikey=1f3e495&s=' + $('.input-keyword').val(),
         success: results => {
@@ -29,9 +28,7 @@ $('.search-button').on('click', function(){
             console.log(e.responseText)
         }
     })
-
 })
-
 //Menggunakan arrow function dan callback
 //Menggunakan template literals
 
